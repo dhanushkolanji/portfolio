@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url("../../portfolio_dhanush/portfolio/backpic.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #parent{
+            display: flex;
+            /* background-image: url("../../portfolio/bgp.jpg"); */
+            width: 100%;
+            position:sticky;
+            top: 0%;
+            background-color: black;
+        }
+        #name{
+            width: 40%;
+            padding-left: 140px;
+            padding-top: 40px;
+        } 
+        #menu{
+            width: 60%;
+            padding-left: 70px;
+            padding-top: 60px;
+        } 
+        span1:hover{
+            color: white;
+        }
+        span2:hover{
+            color: white;
+        }
+        span3:hover{
+            color: white;
+        }
+        span4:hover{
+            color: white;
+        }
+        span5:hover{
+            color: white;
+        } 
+        span6:hover{
+            color: white;
+        }
+        #child1{
+            display: flex;
+            width: 100%;
+            background-size: cover;
+            /* background-image: url("../../portfolio/bgp.jpg"); */
+        } 
+        #content{
+            width: 60%;
+            padding-top: 40px;
+        }
+        #image{
+            width: 40%;
+            padding-top: 100px;
+            padding-left: 190px;
+        }
+        .first-word{
+            font-size: 60%;
+        }
+        .second-word{
+            font-size: 60%;
+        }
+        spann{
+            font-size: 60%;
+        }
+        #about{
+            font-size: 120%;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            line-height: 1.4;
+        }
+        #btn{
+            background-color: rgb(129, 52, 137);
+            color: white;
+            border-radius: 30px; 
+            padding: 15px; 
+            padding-left: 40px; 
+            padding-right: 40px;
+            letter-spacing: 2px; 
+            word-spacing: 2px;
+            font-size: large;
+            font-weight:900;
+        }
+        #btn:hover{
+            background-color: white;
+            color: rgb(208, 98, 221);
+
+        }
+        #education{
+            display: block;
+            width: 100%;  
+        }
+        #uniq{
+            width: 50%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        #uniq:hover{
+            background-color: rgb(43, 5, 78);
+        }
+        #hicas{
+            width: 50%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+            
+        }
+        #hicas:hover{
+            background-color: rgb(43, 5, 78);
+        }
+        #srm1{
+            width: 50%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        #srm1:hover{
+            background-color: rgb(43, 5, 78);
+        }
+        #srm2{
+            width: 50%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        #srm2:hover{
+            background-color: rgb(43, 5, 78);
+        }
+        #skills{
+            display: block;
+            width: 100%;
+        }
+        #end{
+            display: flex;
+            width: 100%;
+        }
+        #emt{
+            width: 16%;
+        }
+        #fes{
+            width: 34%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin: 15px;
+            padding-bottom: 30px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        #bes{
+            width: 34%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin: 15px;
+            padding-bottom: 30px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        button{
+            background-color: rgb(199, 111, 239);
+            color: rgb(255, 255, 255);
+            border-radius: 15px; 
+            padding: 10px; 
+            padding-left: 30px; 
+            padding-right: 30px;
+            letter-spacing: 2px; 
+            word-spacing: 2px;
+            font-size: large;
+            font-weight:800;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background-color: rgb(128, 14, 124);
+            color: rgb(9, 9, 9);   
+        }
+        #project{
+            display: block;
+            width: 100%;
+        }
+        #pts{
+            display: flex;
+            width: 100%;
+        }
+        #pts1{
+            width: 15%;
+        }
+        #pts2{
+            width: 50%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin: 15px;
+            padding-bottom: 30px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        #pts2:hover{
+            background-color: rgb(43, 5, 78);
+        }
+        #pts3{
+            width: 50%;
+            height: auto;
+            border: 1px double rgb(255, 255, 255);
+            border-radius: 20px;
+            margin: 15px;
+            padding-bottom: 30px;
+            box-shadow: 0 2px 2px 0 rgb(255, 252, 252), 0 2px 5px 0 rgb(255, 255, 255);
+        }
+        #pts3:hover{
+            background-color: rgb(43, 5, 78);
+        }
+        #contact{
+            display: block;
+            width: 100%;
+        }
+        #contact2{
+            display: flex;
+            width: 100%;
+        }
+        #hire{
+            width: 50%;
+        }
+        #con{
+            width: 50%;
+        }
+        #a1{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body >
+    <div id = "parent"> 
+        <div id="name">
+        <h1 style="color: rgb(208, 98, 221); font-family: 'Zapf Chancery','Lucida Handwriting', cursive;">Dhanu's portfolio</h1>
+        </div>
+        <div id="menu">
+            <p id="m2" style="color: rgb(208, 98, 221); margin-left: 20px; padding-left: 80px;">
+                <a id="a1" style="color: rgb(208, 98, 221);" href="#child1"><span2 style="font-size:large; padding-right: 30px;">ABOUT</span2></a1>
+                <a id="a1" style="color: rgb(208, 98, 221);" href="#education"><span3 style="font-size:large; padding-right: 30px;"> EDUCATION </span3></a1>
+                <a id="a1" style="color: rgb(208, 98, 221);" href="#skills"><span4 style="font-size:large; padding-right: 30px;"> SKILLS </span4></a1>
+                <a id="a1" style="color: rgb(208, 98, 221);" href="#project"><span5 style="font-size:large; padding-right: 30px;"> PROJECT </span5></a1>
+                <a id="a1" style="color: rgb(208, 98, 221);" href="#contact"><span6 style="font-size:large; padding-right: 30px;"> CONTACT </span6></a1>
+            </p>
+        </div>
+    </div>
+   
+    <div id="child1" >
+        <div id="content">
+            <p style="font-size:280%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:rgb(208, 98, 221);">Hi, I'm</span><br> <span style="color:rgb(208, 98, 221);padding-left: 139px; padding-bottom: 10px;">Dhanush K</span><br><spann style="color: rgb(208, 98, 221); padding-left: 139px;">I am Looking for</spann> <span class="first-word" style="color: rgb(254, 252, 255);">Python Full Stack Developer</span> <span class="second-word" style="color: white;"></span><br></p>
+            <h1 id="about" style="color: rgb(177, 173, 175); padding-left: 139px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">To secure an entry-level position as a web developer<br>or Python full-stack developer<br>where I can apply my skills and knowledge to contribute to innovative projects,<br>continuously learn and grow with a dynamic organization,<br>and build a strong foundation for a successful career in tech.</h1>
+            <a href="Dhanush Resume(1) (1).pdf" target="_blank">
+            <center><button id="btn"> check Resume</button></center>
+            </a>
+        </div>
+        <div id="image">
+            <img style="border-radius: 50%;border: double 10px rgb(210, 127, 221);" src="dhanu_pic.JPEG" height="350px" width="350px">
+        </div>
+    </div> 
+    <br><br><br><br>
+    <div id="education" style="color: rgb(208, 98, 221);">
+        <center>
+            <H1><u>EDUCATION</u></H1>
+            <h3 style="color: white;">My Education has been a journey of self-discovery and growth.<br>My Education details are as follows</h3>
+        </center>
+        <br><br>
+        <center>
+             <div id="uniq">
+                <h2>UNIQ TECHNOLOGIES</h1>
+                <h3>Python full-stack Developer(2024)</h3>
+                <p style="text-align: justify; padding: 10px; color: white;">As a Python Full Stack Developer, the primary objective is to design, develop, and deploy scalable and efficient web applications using Python. This involves developing front-end user interfaces, creating back-end APIs, integrating databases, and implementing authentication and authorization mechanisms. Additionally, staying up-to-date with industry trends, best practices, and new technologies is crucial for success in this role.</p>
+             </div>
+
+             <div id="hicas">
+                <h2 style="text-transform: uppercase;">Hindustan College of Arts and Science</h2>
+                <h3>Bachelor of Science on Computer Science(2021-2024) </h3>
+                <p style="text-align: justify; padding: 10px; color: white;">The primary objective of a BSc Computer Science program is to equip students with a comprehensive understanding of computer systems, software development, and data analysis.<br> Additionally, develop problem-solving skills, critical thinking, and effective communication skills to prepare them for a successful career in the tech industry.</p>
+            </div>
+
+            <div id="srm1">
+                <h2 style="text-transform: uppercase;">Shanthi Nikethan Matric Higher Secondary School </h2>
+                <h3>HSC - Computer Science(2019-2021)</h3>
+                <p style="text-align: justify; padding: 10px; color: white;">The objective of the computer science course is to equip students with fundamental knowledge and skills in computer Science, including Microsoft Office, data analysis, and digital citizenship.</p>
+            </div>
+
+            <div id="srm2">
+                <h2 style="text-transform: uppercase;">Shanthi Nikethan Matric Higher Secondary School </h2>
+                <h3>SSLC - (2018-2019)</h3>
+                <p style="text-align: justify; padding: 10px; color: white;">The objective of 10th-grade schooling is to equip students with a solid foundation in core subjects, including languages, mathematics, sciences, and social studies.</p>
+            </div>
+        </center>
+     </div>
+    <br><br><br><br>
+    
+    <div id="skills" style="color: rgb(208, 98, 221);">
+        <center><H1><u>SKILLS</u></H1>
+        <h3 style="color: white;">Here are some of my skills on which I have learnt</h3></center>
+        
+        <center>
+    </div> 
+    <div id="end">
+        <div id="emt"></div>      
+        <div id="fes" style="color: rgb(208, 98, 221);">
+            <center><h2><u>FRONT-END</u></h2></center><br>
+            <center>
+            <button>HTML</button>
+            <button>CSS</button>
+            <button> Basic JAVASCRIPT</button>
+        </center>
+        </div>
+        <div id="bes" style="color: rgb(208, 98, 221);">
+            <center><h2><u>BACK-END</u></h2></center><br>
+            <center>
+            <button>PYTHON</button>
+            <button>DJANGO</button>
+            <button>FLASK</button>
+            <button>MYSQL</button>
+            </center>
+        </div> 
+        <div id="emt"></div>
+       </center>
+    </div>
+    <br><br><br><br><br>
+
+    <div id="project" style="color: rgb(208, 98, 221);">
+        <center><H1><u>PROJECT</u></H1>
+            <h3 style="color: white;">I did some projects.<br>There Are </h3>
+    </div>
+    <div id="pts" style="color: rgb(208, 98, 221);">
+        <div id="pts1"></div>
+        <div id="pts2">
+           <CENTER><img src="road_safety.jpeg" height="200" width="200" style="padding-top: 20px;">
+           <h2>Road Accident analysis</h2></CENTER>
+           <h4 style="color: white; text-align: justify; padding: 10px;">
+            Description: - Analyzing Road Accidents using Power Bi
+            Identify patterns and trends that can help improve road
+            safety. <br><br>
+            - Imported the data into the power BI <br><br>
+            - The data includes information about accidents, such as number of vehicles involved, severity of the
+            accidents, location and time. <br><br>
+            Keywords: Research Data Analysis, Power BI, Dash Board, Visualization, Road Accident.</h4>
+        </div>
+        <div id="pts3">
+            <CENTER><img src="hicas back.jpg" height="200" width="200" style="padding-top: 20px;">
+            <h2>College Website</h2></CENTER>
+            <h4 style="color: white; text-align: justify; padding: 10px;">The College Website Mini Project is a user-friendly platform designed to provide essential information about the college, such as courses, faculty, admission details, and events. It serves as a centralized hub for students, faculty, and prospective students to access academic and institutional resources easily.<br><br>
+            Frontend: HTML, CSS (for web-based interface)<br>
+            Backend: Python with django ( The website form connect with django database)  </h4>
+        </div>
+        <div id="pts1"></div>
+
+    </div>
+    
+    
+    
+    
+    <br><br><br><br><br><br>
+    <div id="contact" style="color: rgb(208, 98, 221);">
+        <center>
+            <h1><u>CONTACT ME!!</u></h1>
+        </center><br><br><br>
+        <div id="contact2">
+        <div id="hire" style="padding-left: 150px;">
+            <h1 style="font-size: 350%; font-family:'Zapf Chancery','Lucida Handwriting', cursive;color:white;">want<br> &nbsp;&nbsp;to<br>hire <br>&nbsp;&nbsp; Me?</h1>
+            <p style="padding-left: 180px; padding-bottom: 90px; font-size: 190%;">reach out to me!!</p>
+        </div>
+        <div id="con">
+            <h2 style="padding-top: 25px; color: rgb(208, 98, 221);"><a href="mailto:kolanjidhanu@gmail.com" style="color: rgb(208, 98, 221);">kolanjidhanu@gmail.com</a></h2><br>
+            <span style="font-size: 150%;"><img src="linkedin.jpeg" height="5%" width="4%" style="border-radius: 50%;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://linkedin.com/in/dhanushk12" style="color: rgb(208, 98, 221);">LINKEDIN</a></span><br><br><br>
+            <span style="font-size: 150%;"><img src="github.jpeg" height="5%" width="4%" style="border-radius: 50%;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/dhanushkolanji" style="color: rgb(208, 98, 221);">GITHUB</a></span><br><br><br>
+            <img src="phone.jpg" height="5%" width="4%" style="border-radius: 50%;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 150%;">91+ 8667493100</span><br><br><br>
+            <img src="add.jpg" height="5%" width="4%" style="border-radius: 50%;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 150%;">COIMBATORE, INDIA</span><br><br><br>
+                <form>
+                        <label for="comment" style="font-size: 150%;">SEND A MESSAGE :<br><br></label>
+                        <textarea></textarea><br><br>
+                        <button>SEND</button><br><br>
+                </form>
+            
+        </div>
+        </div>
+    </div>
